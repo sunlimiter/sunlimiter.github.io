@@ -3,6 +3,32 @@
   
     
     <entry>
+      <title><![CDATA[由代码混淆引发的Didn't find class "xxxxx" on path:DexPathList]]></title>
+      <url>/2017/08/31/androidproguard/</url>
+      <content type="html"><![CDATA[<p>加了代码混淆后，一直报这个问题，看了方法数没有超65k</p>
+<p>因为用到了BuildConfig里面的东西，而这个类被混淆了，所以就错误了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-keep class xxxx.xxxx.BuildConfig &#123; *; &#125;</div></pre></td></tr></table></figure>
+<p>proguard-rules.pro 加上上面那个，避免该类被混淆</p>
+<p>同理：-keep class com.xxx.<em> </em>    { *; }，避免该包名下的类被混淆</p>
+<p>文章地址： <a href="http://www.tywho.com/2017/08/31/androidproguard/">http://www.tywho.com/2017/08/31/androidproguard/</a> 转载请注明</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 技术 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> code,android </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[jenkins 节点主机在不同系统导致乱码的解决办法]]></title>
       <url>/2017/08/31/jenkinsmanager/</url>
       <content type="html"><![CDATA[<p>使用jenkins配置android 360加固</p>
