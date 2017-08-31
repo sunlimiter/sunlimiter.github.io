@@ -112,7 +112,7 @@
     <entry>
       <title><![CDATA[测试文章]]></title>
       <url>/2017/08/30/first/</url>
-      <content type="html"><![CDATA[<p>编程博客</p>
+      <content type="html"><![CDATA[<p>编程博客<br>[img]<a href="http://storage.live.com/items/205B08F80B3EEDB1!9214:/20121031033042771.jpg[/img" target="_blank" rel="external">http://storage.live.com/items/205B08F80B3EEDB1!9214:/20121031033042771.jpg[/img</a>]</p>
 ]]></content>
       
         <categories>
