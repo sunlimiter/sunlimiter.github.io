@@ -3,6 +3,36 @@
   
     
     <entry>
+      <title><![CDATA[jenkins 节点主机在不同系统导致乱码的解决办法]]></title>
+      <url>/2017/08/31/jenkinsmanager/</url>
+      <content type="html"><![CDATA[<p>使用jenkins配置android 360加固</p>
+<p>节点启动方法：</p>
+<p>1；slave.jar</p>
+<p>2；slave-agent.jnlp</p>
+<p>主机是linux系统，节点是windows系统，</p>
+<p>使用第二中，方便，但是两个系统编码不一样，加固后文件名字在jenkins里面显示乱码</p>
+<p>解决方法，使用方法1，配置编码 java -Dfile.encoding=UTF-8 -jar slave.jar -jnlpUrl</p>
+<p>控制台输出乱码，但是显示结果不会乱码，凑合能用</p>
+<p>记下，备忘</p>
+<p>文章地址： <a href="http://www.tywho.com/2017/08/31/jenkinsmanager/">http://www.tywho.com/2017/08/31/jenkinsmanager/</a> 转载请注明</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 技术 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> code,jenkins </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[论毅力]]></title>
       <url>/2017/08/31/start/</url>
       <content type="html"><![CDATA[<pre><code>清.梁启超
@@ -113,6 +143,19 @@
   
     
     <entry>
+      <title><![CDATA[关于我]]></title>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<h1 id="姓名"><a href="#姓名" class="headerlink" title="姓名"></a>姓名</h1><h2 id="xE866-职位"><a href="#xE866-职位" class="headerlink" title="&#xE866;职位"></a><i class="material-icons">&#xE866;</i>职位</h2><blockquote>
+<p>联系方式</p>
+</blockquote>
+<h3 id="xE866-关于我"><a href="#xE866-关于我" class="headerlink" title="&#xE866;关于我"></a><i class="material-icons">&#xE866;</i>关于我</h3><p>/<em> 列举一下个人优势和特点 </em>/</p>
+<h3 id="xE866-工作经历"><a href="#xE866-工作经历" class="headerlink" title="&#xE866;工作经历"></a><i class="material-icons">&#xE866;</i>工作经历</h3><p>/<em> 工作的经历和工作内容,注意要时间倒序 </em>/</p>
+<h3 id="xE866-教育经历"><a href="#xE866-教育经历" class="headerlink" title="&#xE866;教育经历"></a><i class="material-icons">&#xE866;</i>教育经历</h3><p>/<em> 学校和专业等信息 </em>/</p>
+<h3 id="xE866-技术经历"><a href="#xE866-技术经历" class="headerlink" title="&#xE866;技术经历"></a><i class="material-icons">&#xE866;</i>技术经历</h3><p>/<em> 不要单纯列出一堆技术名词，而是明确自己做过的事情，这样面试官比较容易对我的技术有个初步判断 </em>/</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[图库]]></title>
       <url>/gallery/index.html</url>
       <content type="html"></content>
@@ -128,19 +171,6 @@
       <title><![CDATA[时间轴]]></title>
       <url>/timeline/index.html</url>
       <content type="html"></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[关于我]]></title>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[<h1 id="姓名"><a href="#姓名" class="headerlink" title="姓名"></a>姓名</h1><h2 id="xE866-职位"><a href="#xE866-职位" class="headerlink" title="&#xE866;职位"></a><i class="material-icons">&#xE866;</i>职位</h2><blockquote>
-<p>联系方式</p>
-</blockquote>
-<h3 id="xE866-关于我"><a href="#xE866-关于我" class="headerlink" title="&#xE866;关于我"></a><i class="material-icons">&#xE866;</i>关于我</h3><p>/<em> 列举一下个人优势和特点 </em>/</p>
-<h3 id="xE866-工作经历"><a href="#xE866-工作经历" class="headerlink" title="&#xE866;工作经历"></a><i class="material-icons">&#xE866;</i>工作经历</h3><p>/<em> 工作的经历和工作内容,注意要时间倒序 </em>/</p>
-<h3 id="xE866-教育经历"><a href="#xE866-教育经历" class="headerlink" title="&#xE866;教育经历"></a><i class="material-icons">&#xE866;</i>教育经历</h3><p>/<em> 学校和专业等信息 </em>/</p>
-<h3 id="xE866-技术经历"><a href="#xE866-技术经历" class="headerlink" title="&#xE866;技术经历"></a><i class="material-icons">&#xE866;</i>技术经历</h3><p>/<em> 不要单纯列出一堆技术名词，而是明确自己做过的事情，这样面试官比较容易对我的技术有个初步判断 </em>/</p>
-]]></content>
     </entry>
     
   
