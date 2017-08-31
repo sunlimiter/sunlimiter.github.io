@@ -10,7 +10,6 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">-keep class xxxx.xxxx.BuildConfig &#123; *; &#125;</div></pre></td></tr></table></figure>
 <p>proguard-rules.pro 加上上面那个，避免该类被混淆</p>
 <p>同理：-keep class com.xxx.<em> </em>    { *; }，避免该包名下的类被混淆</p>
-<p>文章地址： <a href="http://www.tywho.com/2017/08/31/androidproguard/">http://www.tywho.com/2017/08/31/androidproguard/</a> 转载请注明</p>
 ]]></content>
       
         <categories>
@@ -40,7 +39,6 @@
 <p>解决方法，使用方法1，配置编码 java -Dfile.encoding=UTF-8 -jar slave.jar -jnlpUrl</p>
 <p>控制台输出乱码，但是显示结果不会乱码，凑合能用</p>
 <p>记下，备忘</p>
-<p>文章地址： <a href="http://www.tywho.com/2017/08/31/jenkinsmanager/">http://www.tywho.com/2017/08/31/jenkinsmanager/</a> 转载请注明</p>
 ]]></content>
       
         <categories>
@@ -66,7 +64,6 @@
 <p>盖人生历程，大抵逆境居十六七，顺境亦居十三四，而顺逆两境又常相间以迭乘。无论事之大小，必有数次乃至十数次之阻力，其阻力虽或大或小，而要之必无可逃避者也。其在志力薄弱之士，始固曰吾欲云云，其意以为天下事固易易也，及骤尝焉而阻力猝来，颓然丧矣；其次弱者，乘一时之意气，透过此第一关，遇再挫而退；稍强者，遇三四挫而退；更稍强者，遇五六挫而退；其事愈大者，其遇挫愈多；其不退也愈难，非至强之人，未有能善于其终者也。</p>
 <p>夫苟其挫而不退矣，则小逆之后，必有小顺。大逆之后，必有大顺。盘根错节之既经，而随有应刃而解之一日。旁观者徒艳羡其功之成，以为是殆幸运儿，而天有以宠彼也，又以为我蹇于遭逢，故所就不彼若也。庸讵知所谓蹇焉、幸焉者，皆彼与我之相同，而其能征服此蹇焉，利用此幸焉与否，即彼成我败所由判也。更譬诸操舟，如以兼旬之期，行千里之地者，其间风潮之或顺或逆，常相参伍。彼以坚苦忍耐之力，冒其逆而突过之，而后得从容以进度其顺。我则或一日而返焉，或二三日而返焉，或五六日而返焉，故彼岸终不可达也。</p>
 <p>孔子曰：”譬如为山，未成一篑，止，吾止也；譬如平地，虽覆一篑，进，吾往也”孟子曰：”有为者，譬若掘井，掘井九仞，而不及泉，犹为弃井也”成败之数，视此而已。</p>
-<p>文章地址： <a href="http://www.tywho.com/2017/08/31/start/">http://www.tywho.com/2017/08/31/start/</a> 转载请注明</p>
 ]]></content>
       
         <categories>
@@ -95,7 +92,6 @@
 <p>　　帝曰：「畴咨若予采？」<br>　　欢兜曰：「都！共工方鸠僝功。」<br>　　帝曰：「吁！静言庸违，像恭滔天。」</p>
 <p>　　帝曰：「咨！四岳，汤汤洪水方割，荡荡怀山襄陵，浩浩滔天。下民其咨，有能俾乂？」<br>　　佥曰：「于！鲧哉。」<br>　　帝曰：「吁！咈哉，方命圮族。」<br>　　岳曰：「异哉！试可乃已。」<br>　　帝曰，「往，钦哉！」九载，绩用弗成。</p>
 <p>　　帝曰：「咨！四岳。朕在位七十载，汝能庸命，巽朕位？」<br>　　岳曰：「否德忝帝位。」<br>　　曰：「明明扬侧陋。」<br>　　师锡帝曰：「有鳏在下，曰虞舜。」<br>　　帝曰：「俞？予闻，如何？」<br>　　岳曰：「瞽子，父顽，母嚣，像傲；克谐以孝，烝烝乂，不格奸。」<br>　　帝曰：「我其试哉！女于时，观厥刑于二女。」<br>　　厘降二女于妫汭，嫔于虞。<br>　　帝曰：「钦哉！」<br>　　慎微五典，五典克从。纳于百揆，百揆时叙。宾于四门，四门穆穆。纳于大麓，烈风雷雨弗迷。<br>　　帝曰：“格！汝舜。询事考言，乃言凪可绩，三载。汝陟 帝位。”<br>　　舜让于德，弗嗣。</p>
-<p>文章地址： <a href="http://www.tywho.com/2017/08/30/second/">http://www.tywho.com/2017/08/30/second/</a> 转载请注明</p>
 ]]></content>
       
         <categories>
@@ -117,7 +113,6 @@
       <title><![CDATA[测试文章]]></title>
       <url>/2017/08/30/first/</url>
       <content type="html"><![CDATA[<p>编程博客</p>
-<p>文章地址： <a href="http://www.tywho.com/2017/08/30/first/">http://www.tywho.com/2017/08/30/first/</a> 转载请注明</p>
 ]]></content>
       
         <categories>
@@ -147,7 +142,6 @@
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-<p>文章地址： <a href="http://www.tywho.com/2017/08/30/hello-world/">http://www.tywho.com/2017/08/30/hello-world/</a> 转载请注明</p>
 ]]></content>
       
         <categories>
@@ -169,6 +163,12 @@
   
     
     <entry>
+      <title><![CDATA[图库]]></title>
+      <url>/gallery/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[关于我]]></title>
       <url>/about/index.html</url>
       <content type="html"><![CDATA[<h1 id="姓名"><a href="#姓名" class="headerlink" title="姓名"></a>姓名</h1><h2 id="xE866-职位"><a href="#xE866-职位" class="headerlink" title="&#xE866;职位"></a><i class="material-icons">&#xE866;</i>职位</h2><blockquote>
@@ -184,12 +184,6 @@
     <entry>
       <title><![CDATA[标签页]]></title>
       <url>/tags/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[图库]]></title>
-      <url>/gallery/index.html</url>
       <content type="html"></content>
     </entry>
     
