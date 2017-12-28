@@ -240,13 +240,6 @@
     
     <entry>
       <title></title>
-      <url>/README.html</url>
-      <content type="html"><![CDATA[<p>我的个人博客</p>
-]]></content>
-    </entry>
-    
-    <entry>
-      <title></title>
       <url>/404.html</url>
       <content type="html"><![CDATA[<script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" charset="utf-8" homepageurl="http://www.tywho.com/" homepagename="回到我的主页">
 </script>]]></content>
