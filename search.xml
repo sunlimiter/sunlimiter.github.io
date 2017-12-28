@@ -3,7 +3,7 @@
   
     
     <entry>
-      <title><![CDATA[announcement]]></title>
+      <title><![CDATA[网站改动公告]]></title>
       <url>/2017/12/28/announcement/</url>
       <content type="html"><![CDATA[<p>原网站部署在国外vps上，本意是用来翻墙，但是空着也觉得浪费，所以做了一个hexo静态博客，因为vps每次购买的时间都不长，所以到期后如果忘记续费网站就没了，还要辛苦从头再搞，这样几次之后也是不想折腾，于是把博客就迁移到github上了，一是不再折腾，二是显得专业点，简历上也好看不是。</p>
 <p>部署到github后用github+个人帐号做域名有点low，手里的域名到期还有很久，就直接配置了自定义域名，然后修改了dns解析，这样就可以通过自己的域名访问啦，哦也。</p>
