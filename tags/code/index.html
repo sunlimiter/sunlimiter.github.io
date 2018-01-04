@@ -682,98 +682,167 @@ It will not impact the appearance and can give developers a lot of support :)
 
 <!-- Theme Material -->
 
-<style>
-    .clock{
-	width:200px;
-	height:200px;
-	border-radius:100%;
-	position:relative;
-	background-image:url(http://sandbox.runjs.cn/uploads/rs/193/ybc7pl9z/6880637_10180600137.jpg);
-	background-size:100%;
-}
-.line{
-	height:4px;
-	background-color:red;
-	margin-left:-15px;
-	margin-top:-2px;
-}
-.original{
-	position:absolute;
-	left:50%;
-	top:50%;
-	width:1px;
-	height:1px;
-	float:left;
+<canvas id="canvas" width="100" height="100" style="background:black"></canvas>
+		<script>
+			//獲取canvas元素
+			var canvas = document.getElementById("canvas");
+			//設置2d繪圖環境
+			var ctx = canvas.getContext("2d");
+			
+			//軌道
+			function drawTrack(){
+				for(var i=0;i<8;i++){
+					ctx.beginPath();
+					ctx.arc(500,500,(i+1)*50,0,360,false);
+					ctx.closePath();
+					//設置顏色
+					ctx.strokeStyle = '#fff';
+					ctx.stroke();
+				}
+			}
+			drawTrack();
+			
+			//畫星球
+			function Star(x,y,radius,cycle,sColor,eColor){
+				
+				//星球的座標點
+				this.x = x;
+				this.y = y;
+				
+				//星球的半徑
+				this.radius = radius;
+				
+				//公轉週期
+				this.cycle = cycle;
+				
+				//星球的顏色(開始色,結束色)
+				this.sColor = sColor;
+				this.eColor = eColor;
+				
+				//新建一個漸變顏色空對象
+				this.color = null;
+				
+				//設置一個計時器
+				this.time = 0;
+				
+				this.draw = function(){
+					//保存之前的畫布內容
+					ctx.save();
+					
+					//重置0,0座標點
+					ctx.translate(500,500);
+					
+					//設置旋轉角度
+					ctx.rotate(this.time*(360/this.cycle)*(Math.PI/180));
+					
+					//畫星球
+					ctx.beginPath();
+					ctx.arc(this.x,this.y,this.radius,0,360,false);
+					ctx.closePath();
+					
+					//徑向漸變.兩個圓之間的部份才是漸變
+					this.color = ctx.createRadialGradient(this.x,this.y,0,this.x,this.y,this.radius);
+					
+					//設置漸變效果
+					this.color.addColorStop(0,this.sColor);
+					this.color.addColorStop(1,this.eColor);
+					
+					//填充星球
+					ctx.fillStyle = this.color;
+					ctx.fill();
+					
+					//還原之前的保存的畫布內容
+					ctx.restore();
+					
+					//計時器加一;
+					this.time+=1;
+				}
+			}
+			
+			//創建一個太陽的構造方法
+			function Sun(){
+				Star.call(this,0,0,20,0,"#f00","#f90");
+			}
+			
+			//創建一個水星的構造方法
+			function Mercury(){
+				Star.call(this,0,-50,10,87.70,"#A69697","#5C3E40");
+			}
+			
+			//創建一個金星的構造方法
+			function Venus(){
+				Star.call(this,0,-100,10,224.701,"#C4BBAC","#1f1315");
+			}
+			
+			//創建一個地球的構造方法
+			function Earth(){
+				Star.call(this,0,-150,10,365.224,"#78B1E8","#050C12");
+			}
+			
+			//創建一個火星的構造方法
+			function Mars(){
+				Star.call(this,0,-200,10,686.98,"#CEC9B6","#76422D");
+			}
+			
+			//創建一個木星的構造方法
+			function Jupiter(){
+				Star.call(this,0,-250,10,4332.589,"#C0A48E","#322222");
+			}
+			
+			//創建一個土星的構造方法
+			function Saturn(){
+				Star.call(this,0,-300,10,10759.5,"#F7F9E3","#5C4533");
+			}
+			
+			//創建一個天皇星的構造方法
+			function Uranus(){
+				Star.call(this,0,-350,10,30799.095,"#A7E1E5","#19243A");
+			}
+			
+			//創建一個海王星的構造方法
+			function Neptune(){
+				Star.call(this,0,-400,10,60152,"#0661B2","#1E3B73");
+			}
+			
+			
+			var sun = new Sun();
+			
+			var mercury = new Mercury();
+			
+			var venus = new Venus();
+			
+			var earth = new Earth();
 
-}
-.clock>.point{
-	position:absolute;
-	top:50%;
-	left:50%;
-	margin-left:-5px;
-	margin-top:-6px;
-	width:3px;
-	height:3px;
-	padding:5px;
-	background-color:red;
-	border-radius:13px;
-}
-.original.seconds{
-	-webkit-animation:rotate_origin 60s linear infinite;
-	animation:rotate_origin 60s linear infinite;
-}
-.original.seconds>.line{
-	background-color:red;
-	width:100px;
-	height:2px;
-}
-.original.minutes{
-	-webkit-animation:rotate_origin 3600s linear infinite;
-	animation:rotate_origin 3600s linear infinite;
-}
-.original.minutes>.line{
-	background-color:blue;
-	width:80px;
-	height:3px;
-}
-.original.hours{
-	-webkit-animation:rotate_origin 86400s linear infinite;
-	animation:rotate_origin 86400s linear infinite;
-}
-.original.hours>.line{
-	width:60px;
-	background-color:green;
-}
-@-webkit-keyframes rotate_origin{
-	from{
-		-webkit-transform:rotateZ(0deg);
-	}
-	to{
-		-webkit-transform:rotateZ(360deg);
-	}
-}
-@keyframes rotate_origin{
-	from{
-		transform:rotateZ(0deg);
-	}
-	to{
-		transform:rotateZ(360deg);
-	}
-}
-</style>
-<div class="clock">
-    <div class="original hours">
-        <div class="line"></div>
-    </div>
-    <div class="original minutes">
-        <div class="line"></div>
-    </div>
-    <div class="original seconds">
-        <div class="line"></div>
-    </div>
-    <div class="point"></div>
-    
-</div>
+			var mars = new Mars();
+			
+			var jupiter = new Jupiter();
+			
+			var saturn = new Saturn();
+			
+			var uranus = new Uranus();
+			
+			var neptune = new Neptune();
+
+			
+			function move(){
+				
+				ctx.clearRect(0,0,1000,1000);
+				drawTrack();
+				//畫出每個星球
+				sun.draw();
+				mercury.draw();
+				venus.draw();
+				earth.draw();
+				mars.draw();
+				jupiter.draw();
+				saturn.draw();
+				uranus.draw();
+				neptune.draw();
+			}
+			
+			setInterval(move,15);
+			
+		</script>
 <!-- Help & Support -->
 <!--
 
