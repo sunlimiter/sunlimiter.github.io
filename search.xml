@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[网站改动公告]]></title>
       <url>/2017/12/28/announcement/</url>
-      <content type="html"><![CDATA[<iframe src="http://open.iqiyi.com/developer/player_js/coopPlayerIndex.html?vid=ec65a777d2b7e13e97c866f25b2b6d6d&tvId=515639900&accessToken=2.f22860a2479ad60d8da7697274de9346&appKey=3955c3425820435e86d0f4cdfe56f5e7&appId=1368&height=100%&width=100%" frameborder="0" allowfullscreen="true" width="100%" height="100%"></iframe>
+      <content type="html"><![CDATA[<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=247415&auto=0&height=66"></iframe>
 
 
 <p>原网站部署在国外vps上，本意是用来翻墙，但是空着也觉得浪费，所以做了一个hexo静态博客，因为vps每次购买的时间都不长，所以到期后如果忘记续费网站就没了，还要辛苦从头再搞，这样几次之后也是不想折腾，于是把博客就迁移到github上了，一是不再折腾，二是显得专业点，简历上也好看不是。</p>
