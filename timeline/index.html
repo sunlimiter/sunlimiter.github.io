@@ -1065,166 +1065,15 @@ It will not impact the appearance and can give developers a lot of support :)
 
 <!-- Theme Material -->
 
-<canvas id="canvas" width="100" height="100" style="background:black"></canvas>
+<canvas id="c" width="200" height="560"></canvas>
 		<script>
-			//獲取canvas元素
-			var canvas = document.getElementById("canvas");
-			//設置2d繪圖環境
-			var ctx = canvas.getContext("2d");
-			
-			//軌道
-			function drawTrack(){
-				for(var i=0;i<8;i++){
-					ctx.beginPath();
-					ctx.arc(500,500,(i+1)*50,0,360,false);
-					ctx.closePath();
-					//設置顏色
-					ctx.strokeStyle = '#fff';
-					ctx.stroke();
-				}
-			}
-			drawTrack();
-			
-			//畫星球
-			function Star(x,y,radius,cycle,sColor,eColor){
-				
-				//星球的座標點
-				this.x = x;
-				this.y = y;
-				
-				//星球的半徑
-				this.radius = radius;
-				
-				//公轉週期
-				this.cycle = cycle;
-				
-				//星球的顏色(開始色,結束色)
-				this.sColor = sColor;
-				this.eColor = eColor;
-				
-				//新建一個漸變顏色空對象
-				this.color = null;
-				
-				//設置一個計時器
-				this.time = 0;
-				
-				this.draw = function(){
-					//保存之前的畫布內容
-					ctx.save();
-					
-					//重置0,0座標點
-					ctx.translate(500,500);
-					
-					//設置旋轉角度
-					ctx.rotate(this.time*(360/this.cycle)*(Math.PI/180));
-					
-					//畫星球
-					ctx.beginPath();
-					ctx.arc(this.x,this.y,this.radius,0,360,false);
-					ctx.closePath();
-					
-					//徑向漸變.兩個圓之間的部份才是漸變
-					this.color = ctx.createRadialGradient(this.x,this.y,0,this.x,this.y,this.radius);
-					
-					//設置漸變效果
-					this.color.addColorStop(0,this.sColor);
-					this.color.addColorStop(1,this.eColor);
-					
-					//填充星球
-					ctx.fillStyle = this.color;
-					ctx.fill();
-					
-					//還原之前的保存的畫布內容
-					ctx.restore();
-					
-					//計時器加一;
-					this.time+=1;
-				}
-			}
-			
-			//創建一個太陽的構造方法
-			function Sun(){
-				Star.call(this,0,0,20,0,"#f00","#f90");
-			}
-			
-			//創建一個水星的構造方法
-			function Mercury(){
-				Star.call(this,0,-50,10,87.70,"#A69697","#5C3E40");
-			}
-			
-			//創建一個金星的構造方法
-			function Venus(){
-				Star.call(this,0,-100,10,224.701,"#C4BBAC","#1f1315");
-			}
-			
-			//創建一個地球的構造方法
-			function Earth(){
-				Star.call(this,0,-150,10,365.224,"#78B1E8","#050C12");
-			}
-			
-			//創建一個火星的構造方法
-			function Mars(){
-				Star.call(this,0,-200,10,686.98,"#CEC9B6","#76422D");
-			}
-			
-			//創建一個木星的構造方法
-			function Jupiter(){
-				Star.call(this,0,-250,10,4332.589,"#C0A48E","#322222");
-			}
-			
-			//創建一個土星的構造方法
-			function Saturn(){
-				Star.call(this,0,-300,10,10759.5,"#F7F9E3","#5C4533");
-			}
-			
-			//創建一個天皇星的構造方法
-			function Uranus(){
-				Star.call(this,0,-350,10,30799.095,"#A7E1E5","#19243A");
-			}
-			
-			//創建一個海王星的構造方法
-			function Neptune(){
-				Star.call(this,0,-400,10,60152,"#0661B2","#1E3B73");
-			}
-			
-			
-			var sun = new Sun();
-			
-			var mercury = new Mercury();
-			
-			var venus = new Venus();
-			
-			var earth = new Earth();
-
-			var mars = new Mars();
-			
-			var jupiter = new Jupiter();
-			
-			var saturn = new Saturn();
-			
-			var uranus = new Uranus();
-			
-			var neptune = new Neptune();
-
-			
-			function move(){
-				
-				ctx.clearRect(0,0,1000,1000);
-				drawTrack();
-				//畫出每個星球
-				sun.draw();
-				mercury.draw();
-				venus.draw();
-				earth.draw();
-				mars.draw();
-				jupiter.draw();
-				saturn.draw();
-				uranus.draw();
-				neptune.draw();
-			}
-			
-			setInterval(move,15);
-			
+						var b = document.body;
+                        var c = document.getElementsByTagName('canvas')[0];
+                        var a = c.getContext('2d');
+                        document.body.clientWidth; // fix bug in webkit: http://qfox.nl/weblog/218
+                    
+            
+            _="G=[V,j=WV,-j]];jX=83,(+3+KE37Uji&32?70:,-80Y2]b=a[j]=c.cloneNode(LFb.getContext('2d'bAb;x=8#	8-x,6+x(j<17X7;<xeB@x*@x*y,.07$OsetIntervalcLF5;a	e#73E-=7$7<ZaB0#-i$Q,-8Oj++;ZF8Q/((i+)%3095W0-e*5,6-e#*5#OG.sortreturn -eV]}OG.map=L^)/-[,=+]V];y=^X^)(X/6)+;x=0Y8Q;~~H2]W-@x-~H4]/1*^5+/H3]-@yL;!H2]&&Z_beginPath(_moJbezierCurJ()})},j=4OjLj?cA1Q:9Q;z=x=*yZj|(z+1)%.5<.1&&(z*(191+(F527368,xD9+Ui3*e,(59525-y*(5188+(+(280*,yD8-(j&2]j||abs(F8-i%)<54-E&&YE2e4#+e*/|[1$4$,,$,8$][~~(E48+e/3)%10W90+E8,i])cos(>>j*4&15)sin(i(function(b#){H0])*--;)H1]	.StylF'hsla('+[for(`,j+y,Math.),iG.push([_drawImage(a[/8`/2,y_270+'%',(j&15K(y=))50fill1660j/.height=1]+')',i(.5+.5#,e$,1@30+A.width=B.Rect(D*(10*Ei/Fe=Hb[JveTo(Yi*Li=O);Qe3UPI*V[0W],X+Y-KZi^_a.`+x+";for(Y=0;$="`_^ZYXWVUQOLKJHFEDBA@$#	"[Y++];)with(_.split($))_=join(pop());eval(_)
 		</script>
 <!-- Help & Support -->
 <!--
