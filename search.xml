@@ -3,6 +3,27 @@
   
     
     <entry>
+      <title><![CDATA[ss20180108]]></title>
+      <url>/2018/01/08/ss20180108/</url>
+      <content type="html"><![CDATA[<p>今日微博功能，测试一下</p>
+]]></content>
+      
+        <categories>
+            
+            <category> 吐槽 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> diary </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[网站改动公告]]></title>
       <url>/2017/12/28/announcement/</url>
       <content type="html"><![CDATA[<p>原网站部署在国外vps上，本意是用来翻墙，但是空着也觉得浪费，所以做了一个hexo静态博客，因为vps每次购买的时间都不长，所以到期后如果忘记续费网站就没了，还要辛苦从头再搞，这样几次之后也是不想折腾，于是把博客就迁移到github上了，一是不再折腾，二是显得专业点，简历上也好看不是。</p>
@@ -189,30 +210,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[图库]]></title>
-      <url>/gallery/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[links]]></title>
-      <url>/links/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[标签页]]></title>
-      <url>/tags/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
-      <title><![CDATA[时间轴]]></title>
-      <url>/timeline/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[关于我]]></title>
       <url>/about/index.html</url>
       <content type="html"><![CDATA[<h1 id="姓名"><a href="#姓名" class="headerlink" title="姓名"></a>姓名</h1><h2 id="xE866-职位"><a href="#xE866-职位" class="headerlink" title="&#xE866;职位"></a><i class="material-icons">&#xE866;</i>职位</h2><blockquote>
@@ -223,6 +220,30 @@
 <h3 id="xE866-教育经历"><a href="#xE866-教育经历" class="headerlink" title="&#xE866;教育经历"></a><i class="material-icons">&#xE866;</i>教育经历</h3><p>/<em> 学校和专业等信息 </em>/</p>
 <h3 id="xE866-技术经历"><a href="#xE866-技术经历" class="headerlink" title="&#xE866;技术经历"></a><i class="material-icons">&#xE866;</i>技术经历</h3><p>/<em> 不要单纯列出一堆技术名词，而是明确自己做过的事情，这样面试官比较容易对我的技术有个初步判断 </em>/</p>
 ]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[图库]]></title>
+      <url>/gallery/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[标签页]]></title>
+      <url>/tags/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[links]]></title>
+      <url>/links/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[时间轴]]></title>
+      <url>/timeline/index.html</url>
+      <content type="html"></content>
     </entry>
     
   
