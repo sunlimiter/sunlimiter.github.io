@@ -182,21 +182,21 @@
   
     
     <entry>
-      <title><![CDATA[关于我]]></title>
-      <url>/about/index.html</url>
-      <content type="html"><![CDATA[<h1 id="姓名"><a href="#姓名" class="headerlink" title="姓名"></a>姓名</h1><h2 id="xE866-职位"><a href="#xE866-职位" class="headerlink" title="&#xE866;职位"></a><i class="material-icons">&#xE866;</i>职位</h2><blockquote>
-<p>联系方式</p>
-</blockquote>
-<h3 id="xE866-关于我"><a href="#xE866-关于我" class="headerlink" title="&#xE866;关于我"></a><i class="material-icons">&#xE866;</i>关于我</h3><p>/<em> 列举一下个人优势和特点 </em>/</p>
-<h3 id="xE866-工作经历"><a href="#xE866-工作经历" class="headerlink" title="&#xE866;工作经历"></a><i class="material-icons">&#xE866;</i>工作经历</h3><p>/<em> 工作的经历和工作内容,注意要时间倒序 </em>/</p>
-<h3 id="xE866-教育经历"><a href="#xE866-教育经历" class="headerlink" title="&#xE866;教育经历"></a><i class="material-icons">&#xE866;</i>教育经历</h3><p>/<em> 学校和专业等信息 </em>/</p>
-<h3 id="xE866-技术经历"><a href="#xE866-技术经历" class="headerlink" title="&#xE866;技术经历"></a><i class="material-icons">&#xE866;</i>技术经历</h3><p>/<em> 不要单纯列出一堆技术名词，而是明确自己做过的事情，这样面试官比较容易对我的技术有个初步判断 </em>/</p>
-]]></content>
+      <title></title>
+      <url>/404.html</url>
+      <content type="html"><![CDATA[<script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" charset="utf-8" homepageurl="http://www.tywho.com/" homepagename="回到我的主页">
+</script>]]></content>
     </entry>
     
     <entry>
       <title><![CDATA[图库]]></title>
       <url>/gallery/index.html</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[links]]></title>
+      <url>/links/index.html</url>
       <content type="html"></content>
     </entry>
     
@@ -213,10 +213,16 @@
     </entry>
     
     <entry>
-      <title></title>
-      <url>/404.html</url>
-      <content type="html"><![CDATA[<script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" charset="utf-8" homepageurl="http://www.tywho.com/" homepagename="回到我的主页">
-</script>]]></content>
+      <title><![CDATA[关于我]]></title>
+      <url>/about/index.html</url>
+      <content type="html"><![CDATA[<h1 id="姓名"><a href="#姓名" class="headerlink" title="姓名"></a>姓名</h1><h2 id="xE866-职位"><a href="#xE866-职位" class="headerlink" title="&#xE866;职位"></a><i class="material-icons">&#xE866;</i>职位</h2><blockquote>
+<p>联系方式</p>
+</blockquote>
+<h3 id="xE866-关于我"><a href="#xE866-关于我" class="headerlink" title="&#xE866;关于我"></a><i class="material-icons">&#xE866;</i>关于我</h3><p>/<em> 列举一下个人优势和特点 </em>/</p>
+<h3 id="xE866-工作经历"><a href="#xE866-工作经历" class="headerlink" title="&#xE866;工作经历"></a><i class="material-icons">&#xE866;</i>工作经历</h3><p>/<em> 工作的经历和工作内容,注意要时间倒序 </em>/</p>
+<h3 id="xE866-教育经历"><a href="#xE866-教育经历" class="headerlink" title="&#xE866;教育经历"></a><i class="material-icons">&#xE866;</i>教育经历</h3><p>/<em> 学校和专业等信息 </em>/</p>
+<h3 id="xE866-技术经历"><a href="#xE866-技术经历" class="headerlink" title="&#xE866;技术经历"></a><i class="material-icons">&#xE866;</i>技术经历</h3><p>/<em> 不要单纯列出一堆技术名词，而是明确自己做过的事情，这样面试官比较容易对我的技术有个初步判断 </em>/</p>
+]]></content>
     </entry>
     
   
