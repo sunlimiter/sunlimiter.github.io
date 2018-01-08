@@ -208,12 +208,6 @@
     </entry>
     
     <entry>
-      <title><![CDATA[links]]></title>
-      <url>/links/index.html</url>
-      <content type="html"></content>
-    </entry>
-    
-    <entry>
       <title><![CDATA[标签页]]></title>
       <url>/tags/index.html</url>
       <content type="html"></content>
